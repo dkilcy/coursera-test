@@ -1,0 +1,83 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom:  20px;
+}
+
+.cat {
+  font-size:  18px;
+  background-color: lightyellow;
+}
+
+.cow {
+  font-size:  18px;
+  background-color: saddlebrown;
+  color:  white;
+}
+
+.fish {
+  font-size:  18px;
+  background-color: salmon;
+}
+
+.box {
+  position: relative;
+  background-color: #CCCCCC;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  height: 200px;
+  border-color: black;
+  border-style: solid;
+  
+  margin-bottom: 20px;
+}
+
+.tab {
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 33%;
+  height: 25px;
+  text-align: center;
+
+  border-color: black;
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  position:  absolute;
+  width: 100%;
+  padding: 20px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md {
+    float: left;
+    width: 50%;
+  }
+  .row div:nth-child(4) {
+    width:100%;
+  }
+}
